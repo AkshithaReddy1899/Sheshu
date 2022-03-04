@@ -3,6 +3,7 @@
 #main {
   text-align: center;
   z-index: -1;
+  margin-top: 70px;
 }
 
 .fas,
@@ -63,42 +64,31 @@
   animation-direction: normal, alternate;
 }
 
-/* ABOUT */
-
-.about {
-  background: #212121;
-}
-
-.about-img {
-  width: 200px;
-  height: 200px;
-  border: 2px solid yellow;
-}
-
-.about-section {
+.main-content {
+  color: #fff;
+  text-align: left;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
-.about-main-container {
-  flex-direction: column;
+.main-text {
+  margin: 20px auto;
 }
 
-.about-heading {
-  color: #bdbdbd;
+.main-description {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.about-main {
-  color: #757575;
-}
-
-.about-hr {
-  border: none;
-  border-top: 2px solid #bdbdbd;
-  width: 80%;
-}
-
-.img {
-  width: 250px;
-  height: 300px;
-  border: 1px solid yellow;
+@media screen and (min-width: 400px) {
+  .main-content {
+    margin: 30px;
+    padding-top: 50px;
+  }
 }

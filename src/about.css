@@ -1,0 +1,59 @@
+/* ABOUT */
+
+.about {
+  background: #212121;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid yellow;
+}
+
+.about-section {
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.about-section h2 {
+  margin: 15px auto;
+}
+
+.about-main-container {
+  flex-direction: column;
+}
+
+.about-heading {
+  color: #bdbdbd;
+  margin: 1px auto 20px auto;
+}
+
+.about-main {
+  color: #757575;
+}
+
+.about-hr {
+  border: none;
+  border-top: 2px solid #bdbdbd;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.img {
+  width: 250px;
+  height: 300px;
+  border: 1px solid yellow;
+}
+
+.about-tutor-container {
+  color: #757575;
+}
+
+.about-tutor-container h3 {
+  margin-top: 20px;
+}
+
+.about-tutor-description {
+  margin: 10px;
+}
