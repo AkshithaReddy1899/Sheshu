@@ -25,16 +25,16 @@ const description = document.getElementById('modal__description');
 const modalClose = () => {
   body.style.overflow = 'scroll';
   modal.style.display = 'none';
-}
+};
 
-close.addEventListener('click', () => {modalClose()})
+close.addEventListener('click', () => { modalClose(); });
 
 const modalDisplay = (id) => {
   modal.style.display = 'block';
   const obj = modalData.filter((item) => item.id === id);
   header.textContent = obj[0].title;
   description.textContent = obj[0].description;
-}
+};
 
 const reviewsObj = [
   {
@@ -42,18 +42,14 @@ const reviewsObj = [
     name: 'Loreum ispusm',
     qualification: 'Loreum ipsum',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nisi quod iste aspernatur accusantium! Ratione ducimus exercitationem impedit dolorum architecto provident ea sint animi sequi necessitatibus, voluptatem quisquam officiis quas',
-  }
-]
+  },
+];
 
-const reviewContainer = document.querySelector('carousel-inner');
+// const reviewContainer = document.querySelector('carousel-inner');
 
 reviewsObj.forEach((item) => {
   const div = document.createElement('div');
   div.className = 'carousel-item';
   div.innerHTML += `<img src="${item.img}" class="d-block w-100" alt="Student">
-  <p class="review_name"></p>`
-})
-
-/* <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div> */
+  <p class="review_name"></p>`;
+});

@@ -36,20 +36,6 @@ main {
   background-position: center center;
 }
 
-/*
-.main__container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 450px;
-  filter: contrast(50%);
-}*/
-video {
-  z-index: -1;
-}
-
 .main__container--content {
   margin-top: 130px;
   position: relative;
@@ -239,13 +225,11 @@ video {
   }
   .main__container-description {
     text-align: center;
+    margin: 30px auto;
   }
   .main__container--content {
     position: relative;
     top: 10%;
-  }
-  .main__container-description {
-    margin: 30px auto;
   }
   .hr-line {
     margin: 65px auto;

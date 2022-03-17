@@ -1,31 +1,3 @@
-/* let i = 0;
-let text = 'Learn German From Home';
-let speed;
-
-const typeWrite = () => {
-  // (window.screen.width < 750) ? text ='LGFH' : text = 'Learn German From Home';
-  (window.screen.width < 750) ? speed = 300 : speed = 100;
-
-  if(i < text.length) {
-    document.getElementById('type').textContent += text.charAt(i);
-    i++;
-    setTimeout(typeWrite, speed);
-  }
-}
-
-typeWrite(); */
-
-const images = [
-  {
-    src: 'src/images/German__flag.jpg',
-    alt: 'German flag',
-  },
-  {
-    src: 'src/images/Berline__Wall.jpg',
-    alt: 'Berlin wall',
-  },
-];
-
 // Main features
 
 const obj = [
