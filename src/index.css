@@ -63,7 +63,7 @@ video {
 
 .main__container-description {
   color: white;
-  margin-top: 45px;
+  margin: 45px auto 0 auto;
   word-spacing: 2px;
   line-height: 25px;
   font-weight: 700;
@@ -165,11 +165,15 @@ video {
     margin: 10px auto;
   }
   .counter__heading {
-    font-size: 1.5rem;
-    margin: 10px;
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+  .main__numbers {
+    margin: 40px auto;
   }
   .main__counter--num {
     font-size: 5rem;
+    margin: 15px;
   }
   .main-features--items {
     margin: 1px 2rem;
@@ -229,14 +233,19 @@ video {
   .main__container {
     width: 100vw;
     height: 600px;
-    position: relative;
+  }
+  .main__container-header {
+    margin: 100px auto;
   }
   .main__container-description {
     text-align: center;
   }
   .main__container--content {
     position: relative;
-    top: 30%;
+    top: 10%;
+  }
+  .main__container-description {
+    margin: 30px auto;
   }
   .hr-line {
     margin: 65px auto;
