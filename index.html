@@ -4,65 +4,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn German</title>
-  <!--font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./src/Style.css">
-  <link rel="stylesheet" href="./src/main.css">
+  <title>LGFH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+
+  <link rel="sty#ffd900fd" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css/">
+
+  <link href="./src/style.css" rel="stylesheet">
+  <link href="./src/index.css" rel="stylesheet">
+  <link href="./src/images/logo.webp" rel="shortcut icon"/>
 </head>
 <body>
-  <div class="home-container">
   <header>
     <nav>
-      <span class="logo"></span>
-      <div class="menu-wrap">
+      <div class="logo">
+        <img src="./src/images/logo.webp" alt="logo" class="nav__logo" />   
+      </div>
+      <div class="menu-container">
         <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
+        <div class="hamburger flex">
+          <span class="line"></span>
+        </div>
+        <div class="menu flex">
           <div>
             <div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a href="reviews.html">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html">Gallery</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    
     </nav>
   </header>
-
-  <main id="main">
-    <div class="main-content">
-      <h3 class="has-text-gold">Willkommen!!!</h3>
-      <p>It’s a german welcome.</p>
-      <h1 class="main-text has-text-gold">Learn German Online</h1>
-      <h4>Perfect online Centre for learning german</h4>
-      <p class="main-description">
-      Learn German from home is one and only one institute which offers online German courses for very affordable prices with good standards......
-      <br /><br />
-      So far around 180 students from all over the world utilized this opportunity and got benefited with the course.
-      <br /><br />
-      You have their reviews to go through....
+  <main>
+    <!--<video autoplay loop>
+      <source class="video" src="./images/GermanTravel.mp4" alt="German tourism">
+    </video>-->
+    <div class="main__container">
+      <div class="main__container--content">
+        <h1 class="main__container-header has-text-gold">Learn German From Home</h1>
+        <p class="main__container-description">Learn German at your convenience. with reasonable prices, from home like never before</p>
+      </div>
+    </div>
+    <section class="main__section-one">
+      <div class="main__logo-container">
+        <img src="./src/images/logo.webp" alt="logo" />
+      </div>
+      <p class="main__section1-description description">
+        Learn German from home is one and only one institute offering online German courses for very <b>affordable prices</b> with <b>good standards</b>
+        <br /><br/>
+        Our main motive is to help students who are serious about learning German and looking for reasonable prices with great standards according to CEFR levels.
       </p>
+    </section>
+    <hr class="hr-line"/>
+    <section class="main__features">
+      <h3 class="heading">Features</h3>
+      <ul class="main-features--list" id="feature-list"></ul>
+    </section>
+    <hr class="hr-line"/>
+    <div class="main__numbers">
+      <ul class="main-features--counter" id="counter-list"></ul>
     </div>
-    <div class="icon animate__animated animate__fadeIn animate__delay-2s">
-      <i class="fas fa-envelope hvr-bob"></i>
-      <i class="fab fa-instagram hvr-bob"></i>
-      <i class="fab fa-whatsapp hvr-bob"></i>
-      <i class="fab fa-twitter hvr-bob"></i>
-    </div>
-  </main> 
+  </main>
+  <div class="whatsapp animate__animated animate__fadeIn">
+    <a href="https://wa.me/9121928081"><img src="./src/images/whatsapp.png" class="whatsapp-logo" alt="whatsapp"></a>
   </div>
   <footer>
-    Learn German from home
+    <div class="footer__links--container flex">
+      <a href="about.html" class="footer__link--item">About us</a>
+      <a href="about.html#courses" class="footer__link--item">Courses</a>
+      <a href="reviews.html" class="footer__link--item">Reviews</a>
+    </div>
+    <hr class="hr-footer"/>
+    <div class="footer__logo-container flex">
+      <div>
+        <img src="./src/images/logo.webp" class="footer__logo" alt="logo" />
+      </div>
+      <p>Learn German From Home</p>
+    </div>
+    <hr class="hr-footer"/>
+    <div>
+      <div class="footer__header">Follow us</div>
+      <div class="footer__icon-container flex">
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+      </div>
+    </div>
   </footer>
-  <script src="./src/main.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 </html>
+
+<!--
+  <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>
+-->

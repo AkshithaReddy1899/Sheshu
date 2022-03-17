@@ -4,88 +4,193 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn German</title>
-  <!--bulma
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
-  <!--font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="./src/Style.css">
-  <link rel="stylesheet" href="./src/about.css">
+  
+  <link href="./src/style.css" rel="stylesheet">
+  <link href="./src/about.css" rel="stylesheet">
 </head>
 <body class="about">
   <header>
     <nav>
-      <span class="logo"></span>
-      <div class="menu-wrap">
+      <div class="logo"></div>
+      <div class="menu-container">
         <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
+        <div class="hamburger flex">
+          <span class="line"></span>
+        </div>
+        <div class="menu flex">
+          <div>
             <div>
-              <div>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="About.html">About</a></li>
-                  <li><a href="course.html">Courses</a></li>
-                  <li><a href="reviews.html">Reviews</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </div>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a href="reviews.html">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html">Gallery</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-  </div>
-  <section class="about-section flex">
-    <h1 class="about-heading">About Us</h1>
+      </div>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2 class="about-heading heading">About Us</h2>
     <div class="about-main-container flex">
-      <div class="about-img"></div>
-      <h2>Learn German from Home</h2>
+      <div>
+        <div class="about-img flex">
+          <img src="./src/images/logo.webp" class="about-logo" alt="LGFH" />
+        </div>
+      <h3 class="about__sub-heading">Learn German from Home</h3>
+      </div>
       <p class="about-main">
-        Established in April,2021 with motto of helping students, working professionals with language support, who are willing to leave for Germany for studying or working...
+        Established in April 2021 with a motto of helping students, working professionals with language support, who are willing to leave for Germany for studying or working
         <br />
-        And we are happy to say that, we have been successful with that....
+        And we are happy to say that we have been successful with that.
         <br />
-        We have been maintaining the same standards of German since then...
+        We have been maintaining the same standards of German since then.
       </p>
+      </div>
     </div>
-    <hr class="about-hr"/>
+    <hr class="hr-line"/>
+    <h2 class="about-heading heading">About Tutors</h2>
     <div class="about-tutor-container">
-      <h2 class="about-heading">About Tutors</h2>
       <div>
         <div class="img"></div>
-        <h3>Chakilam Uday Sheshu</h3>
+        <h3 class="about__sub-heading">Chakilam Uday Sheshu</h3>
         <small>
-          Founder, Learn German from Home
+          Founder - Learn German from Home
           <br />
-          Certified German Tutor, Diploma in German.
+          Certified German Tutor
+          <br />Diploma in German.
         </small>
-        <div class="about-tutor-description">
-          Hello all...myself Uday...
-         <br/>
-          I'm from Hyderabad...
-          <br />
+      </div>
+        <p class="about-tutor-description">
+          Hello, I am Uday, from Hyderabad.
+          <br/>
           I have started my own institute in April 2021 under the name LGFH.
           <br />
-          The reason behind this is a very long story, but to cut it short...
-          <br />
-          I was also one you guys...who was in search of German courses.
-          <br />
-          But the fee structures shocked me.
-          <br />
-          Then I decided to help students and working professionals, who are seriously looking for affordable prices. After finishing my diploma, I have started this institute.
-          <br />
-          And I assure you that no other institute gives you the course at this price with this good explanation and standards.
-          <br />
-          I would be happy enough if you guys can go through my old students' reviews...
-          <br />
-          Feedback is so transparent, that I asked them to give any suggestions or corrections needed, but alas...only positive reviews...you have their mail ids as well...you can talk to them...
+          To start with the story behind it, I was also one of you guys, who were in search of a German course, But the fee structures shocked me.
+          <br/>
+          After finishing my diploma, I decided to help students and working professionals, who are seriously looking for affordable prices.  and I am proud to say that there exists no other institute giving you a course like this at such a price.
+        </p>
+    </div>
+  </section>
+  <hr class="hr-line" />
+  <section class="course-section" id="courses">
+    <h2 class="heading">Courses offered</h2>
+    <p class="course_main-description">
+      Currently, we offer A1, A2, B1 courses only
+      <br/>
+      If you have already completed A1 or A2, you can continue here with the next levels.
+      <br />
+      Monday to Friday one hour daily
+      <br />
+      Every Saturday will be a doubts session
+      <br />
+      Classes will be conducted online using the zoom platform.
+    </p>
+    <hr class="hr-line" />
+    <!--Courses-->
+    <div id="modal">
+      <div class="modal__container">
+        <button type="button" class="close" id="close">&#10005;</button>
+        <hr class="hr-line hr-modal"/>
+        <div class="modal__content">
+          <h1 class="modal__header" id="modal__header"></h1>
+          <p class="modal__description" id="modal__description"></p>
         </div>
       </div>
     </div>
+    <div class="courses flex">
+      <button type="button" class="course-container flex" id="A1" onclick='modalDisplay(id)'>
+        <h1>A1</h1>
+        <p>Beginner</p>
+        <p>2 months</p>
+      </button>
+      <button type="button" class="course-container flex" id="A2" onclick='modalDisplay(id)'>
+        <h1>A2</h1>
+        <p>2 months</p>
+      </button>
+      <button type="button" class="course-container flex" id="B1" onclick='modalDisplay(id)'>
+        <h1>B1</h1>
+        <p>2 months</p>
+      </button>
+    </div>
+    <hr class="hr-line" />
+    <h4>Who can take our course?</h4>
+    <br/>
+    <ul class="course__for">
+      <li class="course__for--item">
+        <b>Students who got admitted for English taught programs</b>
+        <br/> 
+        <small>as for English taught programs, you will not require higher levels of German</small>
+        <br />
+        *** for German taught programs C2 is needed.
+      </li>
+      <li class="course__for--item">
+        <b>Working professionals</b>
+      </li>
+      <li class="course__for--item">
+        <b>Those who wanted to learn a foreign language as hobby.</b>
+      </li>
+    </ul>
+    <p>
+    <h4>Things you should know before joining the course</h4>
+    <br/>
+    <ul class="course__for">
+      <li class="course__for--item">
+        <b>Daily homeworks will be given.</b>
+      </li>
+      <li class="course__for--item">
+        <b>All the Seminars, Listening tests, Dictations, Class tests should be attended.</b><br/>
+        Certificate of completion will be provided only if every exam is attended
+      </li>
+      <li class="course__for--item">
+        <b>A new batch starts every two months.</b>
+      </li>
+    </ul>
   </section>
-  <script src="./src/main.js"></script>
+  <div class="whatsapp animate__animated animate__fadeIn">
+    <a href="https://wa.me/9121928081"><img src="./src/images/whatsapp.png" class="whatsapp-logo" alt="whatsapp"></a>
+  </div>
+  <footer>
+    <div class="footer__links--container flex">
+      <a href="about.html" class="footer__link--item">About us</a>
+      <a href="about.html#courses" class="footer__link--item">Courses</a>
+      <a href="reviews.html" class="footer__link--item">Reviews</a>
+    </div>
+    <hr class="hr-footer"/>
+    <div class="footer__logo-container flex">
+      <div>
+        <img src="./src/images/logo.webp" class="footer__logo" alt="logo" />
+      </div>
+      <p>Learn German From Home</p>
+    </div>
+    <hr class="hr-footer"/>
+    <div>
+      <div class="footer__header">Follow us</div>
+      <div class="footer__icon-container flex">
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/src/course.js"></script>
 </body>
 </html>
