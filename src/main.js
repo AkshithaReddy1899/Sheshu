@@ -81,12 +81,12 @@ counterObj.forEach((item) => {
   counterList.appendChild(li);
 });
 */
-// 
+//
 
 const whatsapp = document.getElementById('whatsapp');
 
 window.onload = () => {
   setTimeout(() => {
     whatsapp.style.display = 'block';
-  }, 3000)
-}
+  }, 3000);
+};

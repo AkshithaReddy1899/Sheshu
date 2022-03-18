@@ -29,6 +29,7 @@ const modalClose = () => {
 
 close.addEventListener('click', () => { modalClose(); });
 
+// eslint-disable-next-line no-unused-vars
 const modalDisplay = (id) => {
   modal.style.display = 'block';
   const obj = modalData.filter((item) => item.id === id);
