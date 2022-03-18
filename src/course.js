@@ -36,8 +36,6 @@ const modalDisplay = (id) => {
   description.textContent = obj[0].description;
 };
 
-document.querySelectorAll('course-container ').addEventListener('click', (id) => { modalDisplay(id); });
-
 const reviewsObj = [
   {
     img: 'src/images/logo-webp',

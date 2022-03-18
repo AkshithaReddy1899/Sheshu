@@ -47,17 +47,17 @@ const list = document.getElementById('feature-list');
 
 obj.forEach((item) => {
   const li = document.createElement('li');
-  li.innerHTML += `<div class="main-features--item">
+  li.innerHTML += `<div class="main-features--item mt-4 p-3">
   <div class="feature__icon-container">
     ${item.icon}
   </div>
-    <h3 class="feature__heading">${item.title}</h3>
-    <p class="feature__description">${item.description}</p>
+    <h3 class="feature__heading mt-3">${item.title}</h3>
+    <p class="feature__description mt-4">${item.description}</p>
   </div>`;
   list.appendChild(li);
 });
 
-// main numbers
+/*
 
 const counterList = document.getElementById('counter-list');
 
@@ -80,3 +80,13 @@ counterObj.forEach((item) => {
   </div>`;
   counterList.appendChild(li);
 });
+*/
+// 
+
+const whatsapp = document.getElementById('whatsapp');
+
+window.onload = () => {
+  setTimeout(() => {
+    whatsapp.style.display = 'block';
+  }, 3000)
+}

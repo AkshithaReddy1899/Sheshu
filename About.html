@@ -11,71 +11,59 @@
   <meta name="language" content="English">
   <meta name="revisit-after" content="1 days">
   <meta name="author" content="Akshitha Reddy">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>LGFH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-  <link href="./src/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link href="./src/styles.css" rel="stylesheet">
   <link href="./src/images/logo.webp" rel="shortvut icon"/>
 </head>
-<body class="about">
-  <header>
-    <nav>
-      <div class="logo"></div>
-      <div class="menu-container">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger flex">
-          <span class="line"></span>
-        </div>
-        <div class="menu flex">
-          <div>
-            <div>
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.html#courses">Courses</a>
-                </li>
-                <li class="nav-item">
-                  <a href="reviews.html">Review</a>
-                </li>
-                <li class="nav-item">
-                  <a href="gallery.html">Gallery</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid bg-dark p-6">
+      <img src="./src/images/logo.webp" alt="LGFH" class="navbar-brand logo"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
-
-  <section class="about-section">
-    <h2 class="about-heading heading">About Us</h2>
-    <div class="about-main-container flex">
-      <div>
-        <div class="about-img flex">
-          <img src="./src/images/logo.webp" class="about-logo" alt="LGFH" />
-        </div>
-      <h3 class="about__sub-heading">Learn German from Home</h3>
-      </div>
-      <p class="about-main">
-        Established in April 2021 with a motto of helping students, working professionals with language support, who are willing to leave for Germany for studying or working
-        <br />
-        And we are happy to say that we have been successful with that.
-        <br />
-        We have been maintaining the same standards of German since then.
-      </p>
     </div>
-    <hr class="hr-line"/>
-    <h2 class="about-heading heading">About Tutors</h2>
-    <div class="about-tutor-container">
+  </nav>
+  <main class="about">
+    <section class="about-section pt-5">
+      <h2 class="about-heading heading p-3">ABOUT US</h2>
+      <div class="about-main-container flex">
+        <div>
+          <div class="about-img flex">
+            <img src="./src/images/logo.webp" class="about-logo" alt="LGFH" />
+          </div>
+        <h3 class="mt-4 has-text-gold">Learn German from Home</h3>
+        </div>
+        <p class="about-main about-tutor-description p-3">
+          Established in April 2021 with a motto of helping students, working professionals with language support, who are willing to leave for Germany for studying or working
+          <br />
+          And we are happy to say that we have been successful with that.
+          <br />
+          We have been maintaining the same standards of German since then.
+        </p>
+      </div>
+      <h2 class="about-heading heading">About Tutors</h2>
+      <div class="about-tutor-container">
       <div>
         <div class="img"></div>
         <h3 class="about__sub-heading">Chakilam Uday Sheshu</h3>
@@ -97,7 +85,7 @@
         </p>
     </div>
   </section>
-  <hr class="hr-line" />
+  <hr class="hr-line mt-6 mx-auto"/>
   <section class="course-section" id="courses">
     <h2 class="heading">Courses offered</h2>
     <p class="course_main-description">
@@ -111,15 +99,14 @@
       <br />
       Classes will be conducted online using the zoom platform.
     </p>
-    <hr class="hr-line" />
-    <!--Courses-->
+    <hr class="hr-line mt-6 mx-auto"/>
     <div id="modal">
       <div class="modal__container">
         <button type="button" class="close" id="close">&#10005;</button>
-        <hr class="hr-line hr-modal"/>
+        <hr class="hr-line hr-modal mt-5 mx-auto"/>
         <div class="modal__content">
-          <h1 class="modal__header" id="modal__header"></h1>
-          <p class="modal__description" id="modal__description"></p>
+          <h1 class="modal__header mt-3" id="modal__header"></h1>
+          <p class="modal__description mt-4" id="modal__description"></p>
         </div>
       </div>
     </div>
@@ -138,7 +125,7 @@
         <p>2 months</p>
       </div>
     </div>
-    <hr class="hr-line" />
+    <hr class="hr-line mt-6 mx-auto"/>
     <h4>Who can take our course?</h4>
     <br/>
     <ul class="course__for">
@@ -172,31 +159,22 @@
       </li>
     </ul>
   </section>
-  <div class="whatsapp animate__animated animate__fadeIn">
-    <a href="https://wa.me/9121928081"><img src="./src/images/whatsapp.png" class="whatsapp-logo" alt="whatsapp"></a>
+  </main>
+  <div class="whatsapp">
+    <a href="https://wa.me/9121928081"><img src="./src/images/whatsapp.png" class="whatsapp-logo" id="whatsapp" alt="whatsapp"></a>
   </div>
-  <footer>
-    <div class="footer__links--container flex">
-      <a href="about.html" class="footer__link--item">About us</a>
-      <a href="about.html#courses" class="footer__link--item">Courses</a>
-      <a href="reviews.html" class="footer__link--item">Reviews</a>
-    </div>
-    <hr class="hr-footer"/>
-    <div class="footer__logo-container flex">
-      <div>
-        <img src="./src/images/logo.webp" class="footer__logo" alt="logo" />
-      </div>
-      <p>Learn German From Home</p>
-    </div>
-    <hr class="hr-footer"/>
-    <div>
-      <div class="footer__header">Follow us</div>
-      <div class="footer__icon-container flex">
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-      </div>
+  <footer class="container-fluid bg-dark">
+    <div class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="about.html#courses" class="nav-link px-2 text-muted">Courses</a></li>
+        <li class="nav-item"><a href="reviews.html" class="nav-link px-2 text-muted">Reviews</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2021 Learn German From Home</p>
     </div>
   </footer>
-  <script src="/src/course.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./src/course.js"></script>
 </body>
 </html>
