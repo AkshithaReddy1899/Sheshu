@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap");
+
 :root {
   --qua-font: 'Quattrocento', serif;
   --qua-san-font: 'Quattrocento Sans', sans-serif;
@@ -11,18 +12,17 @@
 
 main {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@ main {
   width: 100vw;
   height: 400px;
   position: relative;
-  background-image: url("https://media1.giphy.com/media/VN7qpUiqxl6UHGD1RB/200w.webp?cid=ecf05e478zxo8fhv4qplw8dkz1oo6nbdv04p6ew3k2ifccsy&rid=200w.webp&ct=g");
+  background-image: url("./images/wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -74,6 +74,7 @@ main {
 }
 
 /* FEATURE */
+
 .main-features--item {
   text-align: center;
   width: 90%;
@@ -105,16 +106,16 @@ main {
 .main-features--items {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 30px;
 }
 
 .main-features--counter {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 10px auto 40px auto;
 }
 
@@ -136,50 +137,58 @@ main {
   .main__container--content {
     margin-top: 160px;
   }
+
   .main__container-header {
     font-size: 3.2rem;
   }
+
   .main__container-description {
     color: white;
     font-size: 1.2rem;
   }
+
   .main__features {
     margin: 0;
   }
+
   .description {
     font-size: 1.1rem;
     margin: 10px auto;
   }
+
   .counter__heading {
     font-size: 1.2rem;
     margin: 20px;
   }
+
   .main__numbers {
     margin: 40px auto;
   }
+
   .main__counter--num {
     font-size: 5rem;
     margin: 15px;
   }
+
   .main-features--items {
     margin: 1px 2rem;
   }
+
   .main-features--counter {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 10px auto 40px auto;
   }
 }
@@ -194,21 +203,21 @@ main {
 @media screen and (min-width: 800px) {
   .main-features--list {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .main-features--item {
     width: 300px;
     margin: 10px 20px;
@@ -220,37 +229,39 @@ main {
     width: 100vw;
     height: 600px;
   }
+
   .main__container-header {
     margin: 100px auto;
   }
+
   .main__container-description {
     text-align: center;
     margin: 30px auto;
   }
+
   .main__container--content {
     position: relative;
     top: 10%;
   }
+
   .hr-line {
     margin: 65px auto;
   }
+
   .main__section-one {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
   }
+
   .main__logo-container {
     display: block;
     width: 150px;
     height: 150px;
   }
+
   .main__section1-description {
     width: 40%;
     margin: 0;
@@ -259,8 +270,8 @@ main {
     line-height: 28px;
     font-size: 20px;
   }
+
   .main__section1-description b {
     color: var(--gold-color);
   }
 }
-/*# sourceMappingURL=index.css.map */
