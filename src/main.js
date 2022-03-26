@@ -58,12 +58,11 @@ obj.forEach((item) => {
 });
 
 /*
-
 const counterList = document.getElementById('counter-list');
 
 const counterObj = [
   {
-    num: '180+',
+    num: '200+',
     title: 'Students joined',
   },
   {
@@ -74,19 +73,19 @@ const counterObj = [
 
 counterObj.forEach((item) => {
   const li = document.createElement('li');
-  li.innerHTML += `<div class="main-features--items flex">
-  <h3 class="main__counter--num">${item.num}</h3>
+  li.innerHTML += `<div class="main-features--items flex m-3">
+  <h3 class="main__counter--num">${item.num}</h3>&nbsp;&nbsp;
   <p class="counter__heading">${item.title}</p>
   </div>`;
   counterList.appendChild(li);
 });
-*/
+ 
 //
 
-const whatsapp = document.getElementById('whatsapp');
+const whatsapp = document.querySelectorAll('whatsapp-logo');
 
 window.onload = () => {
   setTimeout(() => {
     whatsapp.style.display = 'block';
   }, 3000);
-};
+};*/

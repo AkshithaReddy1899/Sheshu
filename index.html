@@ -22,7 +22,9 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid bg-dark p-6">
-      <img src="./src/images/logo.webp" alt="LGFH" class="navbar-brand logo"/>
+      <div class="nav-logo-container flex">
+        <img src="./src/images/logo.webp" alt="LGFH" class="navbar-brand logo"/>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,13 +56,15 @@
       </div>
     </section>
     <section class="main__section-one mt-4 mx-auto">
-      <div class="main__logo-container">
-        <img src="./src/images/logo.webp" alt="logo" />
+      <div class="main__logo-container flex">
+        <img src="./src/images/logo.webp" alt="logo" class="rounded-circle" />
       </div>
       <p class="main__section1-description description">
         Learn German from home is one and only one institute offering online German courses for very <b>affordable prices</b> with <b>good standards</b>
         <br /><br/>
         Our main motive is to help students who are serious about learning German and looking for reasonable prices with great standards according to CEFR levels.
+        <br/><br/>
+        So far, around 200 students got benefited from our students.
       </p>
     </section>
     <hr class="hr-line mt-6 mx-auto"/>
@@ -76,7 +80,7 @@
         <b class="heading">FOR MORE DETAILS</b>
       </span>
       <div class="bg-light m-3 p-3">
-        <p class="mt-4">Call or text at<br/><b class="text-danger" >+919121928081</b></p>
+        <p class="mt-4">Call or text at<br/><b class="text-danger" >+91 9121928081</b></p>
         <p class="mt-3">Chakilam Uday Sheshu</p>
         <small>Founder @LGFH</small>
       </div>
@@ -84,7 +88,7 @@
     <hr class="hr-line mt-6 mx-auto"/>
   </main>
   <div class="whatsapp">
-    <a href="https://wa.me/9121928081"><img src="./src/images/whatsapp.png" class="whatsapp-logo" id="whatsapp" alt="whatsapp"></a>
+    <a href="https://wa.me/9121928081" aria-label="whatsapp"><img src="./src/images/whatsapp.png" class="whatsapp-logo" alt="whatsapp"></a>
   </div>
   <footer class="container-fluid bg-dark">
     <div class="py-3 my-4">

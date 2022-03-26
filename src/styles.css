@@ -23,16 +23,24 @@ body {
   height: 100vh;
   font-family: var(--mon-font);
   overflow-x: hidden;
-  background: white;
+  background: rgb(248, 245, 245);
   color: var(--dark-font-color);
   font-size: 18px;
   line-height: 24px;
 }
 
+.nav-logo-container {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 100%;
+}
+
 .logo {
-  margin: 0 15px;
+  margin: 0;
   width: 40px;
   height: auto;
+  border-radius: 100%;
 }
 
 .hr-line {
@@ -68,7 +76,14 @@ li {
   position: fixed;
   bottom: 5px;
   right: 5px;
-  display: none;
+  visibility: hidden;
+  animation: whatsapp 0s 3s forwards;
+}
+
+@keyframes whatsapp {
+  to {
+    visibility: visible;
+  }
 }
 
 /* INDEX */
@@ -77,7 +92,7 @@ li {
   width: 100vw;
   height: 400px;
   position: relative;
-  background-image: url("./images/wallpaper.jpg");
+  background-image: url("./images/wallpaper.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -99,6 +114,14 @@ li {
   color: #fff;
   font-weight: 500;
   margin: 25px auto;
+}
+
+.main__logo-container {
+  width: 120px;
+  height: 120px;
+  margin: 1px auto;
+  background: black;
+  border-radius: 100%;
 }
 
 .main__logo-container img {
@@ -146,11 +169,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100%;
 }
 
 .about-logo {
   width: 150px;
   height: 150px;
+  border-radius: 100%;
 }
 
 .about-main-container {
@@ -226,15 +251,16 @@ li {
   margin: 20px auto;
   width: 150px;
   height: 150px;
-  border: 5px solid #e2dada;
+  border: 5px solid rgb(248, 245, 245);
   border-radius: 16px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #f1ebeb;
-  -webkit-box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0;
-  box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0;
+  box-shadow:  8px 8px 16px #e9e6e6, -8px -8px 16px #ffffff,
+  inset 8px 8px 16px #e9e6e6, inset -8px -8px 16px #ffffff;
+  /*-webkit-box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0;
+  box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0; */
 }
 
 .course__for {
