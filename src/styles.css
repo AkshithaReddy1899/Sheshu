@@ -257,14 +257,16 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-shadow: 8px 8px 16px #e9e6e6,
-  -8px -8px 16px #fff,
-  inset 8px 8px 16px #e9e6e6,
-  inset -8px -8px 16px #fff;
-  box-shadow: 8px 8px 16px #e9e6e6,
-  -8px -8px 16px #fff,
-  inset 8px 8px 16px #e9e6e6,
-  inset -8px -8px 16px #fff;
+  -webkit-box-shadow:
+    8px 8px 16px #e9e6e6,
+    -8px -8px 16px #fff,
+    inset 8px 8px 16px #e9e6e6,
+    inset -8px -8px 16px #fff;
+  box-shadow:
+    8px 8px 16px #e9e6e6,
+    -8px -8px 16px #fff,
+    inset 8px 8px 16px #e9e6e6,
+    inset -8px -8px 16px #fff;
 }
 
 .course__for {
