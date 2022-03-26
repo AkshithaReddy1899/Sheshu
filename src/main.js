@@ -57,8 +57,7 @@ obj.forEach((item) => {
   list.appendChild(li);
 });
 
-/*
-const counterList = document.getElementById('counter-list');
+/* const counterList = document.getElementById('counter-list');
 
 const counterObj = [
   {
@@ -78,9 +77,7 @@ counterObj.forEach((item) => {
   <p class="counter__heading">${item.title}</p>
   </div>`;
   counterList.appendChild(li);
-});
- 
-//
+})
 
 const whatsapp = document.querySelectorAll('whatsapp-logo');
 
@@ -88,4 +85,4 @@ window.onload = () => {
   setTimeout(() => {
     whatsapp.style.display = 'block';
   }, 3000);
-};*/
+}; */

@@ -257,10 +257,14 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  box-shadow:  8px 8px 16px #e9e6e6, -8px -8px 16px #ffffff,
-  inset 8px 8px 16px #e9e6e6, inset -8px -8px 16px #ffffff;
-  /*-webkit-box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0;
-  box-shadow: inset 6px 6px 10px #f5f0f0, inset -2px -2px 10px #b6b0b0, 5px 5px 10px #f5f0f0, -9px -9px 18px #b6b0b0; */
+  -webkit-box-shadow: 8px 8px 16px #e9e6e6,
+  -8px -8px 16px #fff,
+  inset 8px 8px 16px #e9e6e6,
+  inset -8px -8px 16px #fff;
+  box-shadow: 8px 8px 16px #e9e6e6,
+  -8px -8px 16px #fff,
+  inset 8px 8px 16px #e9e6e6,
+  inset -8px -8px 16px #fff;
 }
 
 .course__for {
