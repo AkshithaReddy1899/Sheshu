@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat&display=swap');
+
+:root {
+  --mon-font: 'Montserrat', sans-serif;
+  --gar-font: 'Cormorant Garamond', serif;
+  --gold-color: #ffd700;
+  --red-color: rgb(255, 0, 0);
+  --grey-font-color: rgb(61, 60, 60);
+  --dark-font-color: rgb(43, 41, 41);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--mon-font);
+  overflow-x: hidden;
+  background: rgb(248, 245, 245);
+  color: var(--dark-font-color);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav-logo-container {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 100%;
+}
+
+.logo {
+  margin: 0;
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.hr-line {
+  width: 80%;
+  border: none;
+  border-top: 1px solid grey;
+}
+
+.has-text-gold {
+  color: var(--gold-color);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.heading {
+  color: #7c6d6d;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline 3px solid #ffd700;
+}
+
+.whatsapp-logo {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  visibility: hidden;
+  animation: whatsapp 0s 3s forwards;
+}
+
+@keyframes whatsapp {
+  to {
+    visibility: visible;
+  }
+}
+
+/* INDEX */
+
+.main__container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  background-image: url("./images/wallpaper.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main__container--content {
+  width: 90%;
+  text-align: center;
+}
+
+.main__container-header {
+  font-size: 36px;
+  font-weight: bolder;
+  font-family: var(--gar-font);
+  color: #ffd700;
+}
+
+.main__container-description {
+  color: #fff;
+  font-weight: 500;
+  margin: 25px auto;
+}
+
+.main__logo-container {
+  width: 120px;
+  height: 120px;
+  margin: 1px auto;
+  background: black;
+  border-radius: 100%;
+}
+
+.main__logo-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.main__section1-description {
+  margin: 40px 10px;
+  font-size: 17px;
+}
+
+/* features */
+
+.feature__icon {
+  color: #ffd700;
+  font-size: 2.5rem;
+}
+
+.main-features--list {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-features--item {
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: left;
+  width: 300px;
+  height: 300px;
+  margin: 1px 10px;
+}
+
+/* ABOUT */
+
+.about {
+  overflow: scroll;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  margin: 1px auto;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.about-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.about-main-container {
+  flex-direction: column;
+}
+
+.img {
+  width: 250px;
+  height: 300px;
+  border: 1px solid yellow;
+  margin: 0 auto;
+}
+
+.about__sub-heading {
+  margin: 20px auto;
+  color: var(--grey-font-color);
+  font-size: 1.4rem;
+}
+
+.about-tutor-container {
+  color: var(--font-dark-color);
+}
+
+.about-tutor-container small {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
+  color: #524f4f;
+}
+
+.about-tutor-description {
+  margin: 20px auto;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  width: 90%;
+}
+
+.course_main-description {
+  margin: 30px 20px;
+  text-align: left;
+}
+
+.courses {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.courses h1 {
+  font-family: var(--roboto-font);
+  font-size: 22px;
+  margin: 5px auto;
+}
+
+.courses p {
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.course-section h4 {
+  font-size: 1.2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.course-container {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgb(248, 245, 245);
+  border-radius: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow:
+    8px 8px 16px #e9e6e6,
+    -8px -8px 16px #fff,
+    inset 8px 8px 16px #e9e6e6,
+    inset -8px -8px 16px #fff;
+  box-shadow:
+    8px 8px 16px #e9e6e6,
+    -8px -8px 16px #fff,
+    inset 8px 8px 16px #e9e6e6,
+    inset -8px -8px 16px #fff;
+}
+
+.course__for {
+  padding-bottom: 50px;
+}
+
+.course__for--item {
+  list-style: disc;
+  margin: 5px;
+}
+
+#modal {
+  display: none;
+}
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  width: 90%;
+  height: 50%;
+  z-index: 1;
+  border-radius: 15px;
+  background: #313131;
+  color: whitesmoke;
+}
+
+.close {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  color: red;
+  margin: 10px 15px;
+  float: right;
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal__header {
+  margin-top: 10px;
+  color: #ffd700;
+}
+
+.modal__description {
+  margin: 5px auto;
+}
+
+@media screen and (min-width: 450px) {
+  .main-features--item {
+    width: 300px;
+  }
+
+  .contact {
+    width: 400px;
+    margin: 1px auto;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .main__logo-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .main__section1-description {
+    text-align: left;
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .main__container-description {
+    width: 70%;
+  }
+
+  .main__section-one {
+    width: 90vw;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .main__section1-description {
+    width: 50%;
+    margin: 20px 0;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .heading {
+    margin: 50px;
+  }
+
+  .about-main-container {
+    flex-direction: row;
+  }
+
+  .about-tutor-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .about-tutor-description {
+    width: 50%;
+  }
+}
